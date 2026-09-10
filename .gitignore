@@ -1,0 +1,32 @@
+# Data (never commit clinical / participant data)
+data/
+*.sav
+*.csv
+*.xlsx
+*.xls
+*.dta
+*.parquet
+!data/README.md
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Outputs / archives / large media
+outputs/
+outputs_archive/
+*.zip
+*.mov
+*.mp4
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

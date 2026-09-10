@@ -1,0 +1,13 @@
+# Python packages used by the notebook in this repository.
+# Install with:  pip install -r requirements.txt
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn
+imbalanced-learn
+xgboost
+lightgbm
+shap
+statsmodels
