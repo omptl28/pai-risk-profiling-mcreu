@@ -1,8 +1,8 @@
 # PAI-2 Risk Profiling (MCREU)
 
-Interpretable machine learning on the Personality Assessment Inventory (PAI-2) for early detection of clinical risk. This notebook produced the analysis behind the poster "Machine Learning-Based Risk Profile Identification in Mental Health Disorders," presented at the 2026 Penn State Undergraduate Exhibition as part of the Multi-Campus Research Experience for Undergraduates (MCREU).
+Interpretable machine learning on the Personality Assessment Inventory (PAI-2) for early detection of clinical risk. This notebook produced the analysis behind the poster "Interpretable Machine Learning for Clinical Risk Detection in Personality Disorders," presented at the 2026 MCREU Research Exhibition (Multi-Campus Research Experience for Undergraduates).
 
-> **This is the earlier MCREU version of the analysis.** The machine-learning research questions were later revised and strengthened. The current versions of RQ5 to RQ7, with a fully leakage-safe evaluation, live in the `updated-analysis` repository. This repository is kept for provenance and to document the poster as presented.
+> **This is the earlier MCREU version of the analysis.** The machine-learning research questions were later revised and strengthened. The current versions of RQ5 to RQ7, with a fully leakage-safe evaluation, live in the `pai2-personality-ml` repository. This repository is kept for provenance and to document the poster as presented.
 
 ## Research questions
 
@@ -29,8 +29,8 @@ data/                        # you supply the dataset here (not included)
 
 ## Limitations
 
-- This analysis predates the revisions in `updated-analysis` and should be read as the poster-era version.
-- The cross-validated AUC is leakage-safe, but the thresholded operating-point metrics select the decision threshold on the held-out test set and rely on a single train/test split. Those thresholded numbers are therefore optimistic and are not directly comparable to the pooled out-of-fold results in `updated-analysis`.
+- This analysis predates the revisions in `pai2-personality-ml` and should be read as the poster-era version.
+- The cross-validated AUC is leakage-safe, but the thresholded operating-point metrics select the decision threshold on the held-out test set and rely on a single train/test split. Those thresholded numbers are therefore optimistic and are not directly comparable to the pooled out-of-fold results in `pai2-personality-ml`.
 - Where an external criterion is not available, an outcome falls back to a within-instrument proxy (for example an elevated ideation T-score), which is a proxy rather than an independent clinical label.
 - Several diagnosis targets are rare, which limits what can be learned for those outcomes.
 - Results come from a single sample and a single instrument and have not been externally validated. SHAP describes association, not causation.
